@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SunFire Media</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.orange-amber.min.css" />  
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+      
+    <!--Main Style Sheet-->
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+ 
+    <body>
+        
+        
+        <!--Dialog Section-->
+        <dialog id="loginDialog" class="mdl-dialog">
+            <img src="sunfire-logo.png" alt="Sunfire Logo">
+            <h4 class="mdl-dialog__title">Sign In</h4>
+            <div class="mdl-dialog__content">
+                 <!--Textfield with Floating Label--> 
+                <form action="#">
+                    <p id="loginError"></p>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="loginEmail">
+                    <label class="mdl-textfield__label" for="sample3">Email</label>
+                  </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password" id="loginPassword">
+                    <label class="mdl-textfield__label" for="sample3">Password</label>
+                  </div>
+                </form>
+
+            </div>
+            <div class="mdl-dialog__actions">
+                <button id="loginBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Sign In</button>
+                <div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+            </div>
+        </dialog>
+        
+        
+        <div class="login-cover">
+            <div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
+        </div>
+        
+        <!--MAIN PAGE CONTENT-->
+        
+        <div class="m dl-layout mdl-js-layout">
+        <header class="mdl-layout__header">
+        <div class="mdl-layout-icon"></div>
+        <div class="mdl-layout__header-row">
+        <span class="mdl-layout__title">Sunfire Media
+            <span class="page-title-span"> | </span>
+            <span class="page-title-span"> Home </span>
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+        <h6 id="username"></h6>
+        <button id="signOutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+          Sign Out <i class="button-right-icon material-icons">account_circle</i>
+        </button>
+        </nav>
+        </div>
+        </header>
+        <div class="mdl-layout__drawer">
+        </div>
+        </div>
+        
+        
+        
+        <!--Upload File section-->
+        <!--<section class="upload-section">
+            <progress value="0" max="100" id="uploader">0%</progress>
+             Rich Tooltip 
+            <div id="tt3" class="icon material-icons">cloud_upload</div>
+            <div class="mdl-tooltip" data-mdl-for="tt3">Upload <strong>file.zip</strong><input type="file" value="upload" id="fileButton"></div>
+        </section>-->
+        
+        <!--TABLE DESIGN LAYOUT-->
+        <div class="mainDiv" align="left">
+            <h3>All Users</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Cell</td>
+                            <td>VIP</td>
+                            <td>Actions</td>
+                        </tr>
+                    </thead>
+                <tbody id="table_body">
+
+                </tbody>
+                </table>
+        </div>
+        
+        
+        <!--Firebase-->
+        
+        <!--<script src="../dialog-polyfill.js"></script>-->
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <!--<script src="js/index.js"></script>-->
+        
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-storage.js"></script>
+        <script>   
+        // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyCueAvcNW713sdG1-raY3-C4ED-u5zsy3I",
+        authDomain: "sunfire-583ec.firebaseapp.com",
+        databaseURL: "https://sunfire-583ec.firebaseio.com",
+        storageBucket: "sunfire-583ec.appspot.com",
+        messagingSenderId: "253637971788"
+        };
+        firebase.initializeApp(config);
+        
+        //global username
+        var username;
+        
+        firebase.auth().onAuthStateChanged(function(user){
+            
+            
+        if (user){
+        
+        $(".login-cover").hide();
+
+        var dialog = document.querySelector('#loginDialog');
+        if (! dialog.showModal )  {
+        dialogPolyfill.registerDialog(dialog);
+        }
+        dialog.close();
+
+        } else {
+
+        var dialog = document.querySelector('#loginDialog');
+        if (! dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+        }
+        dialog.showModal();
+            
+        }
+        });
+            $("#loginBtn").click(
+             function(){
+            
+            var email = $('#loginEmail').val();
+            username = email.substring(0,email.indexOf('@'));
+            var out = document.getElementById('username');
+            out.innerHTML = username;
+            var password = $('#loginPassword').val();
+
+            if (email !== "" && password !== ""){
+
+            $("#loginProgress").show();
+            $("#loginBtn").hide();
+
+            firebase.auth().signInWithEmailAndPassword(email,password).catch(function(error){
+                if(error){
+                    $("#loginError").show().text(error.message);
+                    $("#loginProgress").hide();
+                    $("#loginBtn").show();
+                }
+            });
+            }
+            } );
+            
+            $('#signOutBtn').click(function(){
+                firebase.auth().signOut().then(
+                function() {
+                    $(".login-cover").show();
+                    $("#loginProgress").hide();
+                    $("#loginBtn").show();
+                    $("#loginError").hide();
+                    window.alert('Goodbye ' + username);
+                }, function(error) {
+                  console.error('Sign Out Error', error);
+                });
+            });
+            
+            //Convert CSV file into HTML Table
+            $.ajax({
+            url: 'http://localhost/Desktop/leonardo_customers.csv',
+            dataType: 'text',
+            }).done(successFunction);
+            
+            function successFunction(data) {
+            var allRows = data.split(/\r?\n|\r/);
+            var table = '<table>';
+            for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
+            if (singleRow === 0) {
+            table += '<thead>';
+            table += '<tr>';
+            } else {
+            table += '<tr>';
+            }
+            var rowCells = allRows[singleRow].split(',');
+            for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
+            if (singleRow === 0) {
+            table += '<th>';
+            table += rowCells[rowCell];
+            table += '</th>';
+            } else {
+            table += '<td>';
+            table += rowCells[rowCell];
+            table += '</td>';
+            }
+            }
+            if (singleRow === 0) {
+            table += '</tr>';
+            table += '</thead>';
+            table += '<tbody>';
+            } else {
+            table += '</tr>';
+            }
+            } 
+            table += '</tbody>';
+            table += '</table>';
+            $('body').append(table);
+            }
+
+            //********************************
+            
+            //FILE UPLOAD
+            /*var uploader = document.getElementById('uploader');
+            var fileButton = document.getElementById('fileButton');
+            
+            fileButton.addEventListener('change', function(e){
+                
+                //get file
+                var file = e.target.files[0];
+                
+                //create storage ref
+                firebase.storage().ref('/' + file.name);
+                
+                //upload file
+                var task = storageRef.put(file);
+                
+                //update progress bar
+                task.on('state_changed',
+                        
+                    function progress(snapshot){
+                        var percentage = (snapshot.bytesTransferred / 100) * 100;
+                        uploader.value = percentage;
+                    },
+                
+                    function error(err){
+                    
+                    },
+                
+                    function complete(){
+                    
+                    }
+                );
+                
+                
+            
+            });*/
+            //******************
+            
+            //TABLE MANIPULATION
+                var rootRef = firebase.database().ref().child("/");
+
+                rootRef.on("child_added", snap => {
+
+                var name = snap.child("name").val();
+                var email = snap.child("email").val();
+                var cell = snap.child("phone").val();
+                var vip = snap.child("pick").val();
+
+                $("#table_body").append("<tr><td>" + name + "</td><td>" + email + "</td><td>" + cell + "</td><td>" + vip +
+                            "</td><td><button>Send</button></td></tr>");
+
+                });
+            //******************
+            
+            //CSV to HTML TABLE
+            
+            
+
+        </script>
+        
+        
+    </body>
+</html>
