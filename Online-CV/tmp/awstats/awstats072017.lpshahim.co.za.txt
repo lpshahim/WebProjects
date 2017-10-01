@@ -1,0 +1,281 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201707 will be lost/reset.
+# Last config file used to build this data file was /home/dhpbgnez/tmp/awstats/awstats.lpshahim.co.za.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2011                
+POS_TIME 2683                
+POS_VISITOR 6289                
+POS_DAY 6720                
+POS_DOMAIN 3235                
+POS_LOGIN 3481                
+POS_ROBOT 3636                
+POS_WORMS 3825                
+POS_EMAILSENDER 3956                
+POS_EMAILRECEIVER 4099                
+POS_SESSION 7087                
+POS_SIDER 7254                
+POS_FILETYPES 4234                
+POS_DOWNLOADS 4496                
+POS_OS 4564                
+POS_BROWSER 4671                
+POS_SCREENSIZE 4785                
+POS_UNKNOWNREFERER 4859                
+POS_UNKNOWNREFERERBROWSER 4946                
+POS_ORIGIN 5028                
+POS_SEREFERRALS 5163                
+POS_PAGEREFS 5307                
+POS_SEARCHWORDS 5455                
+POS_KEYWORDS 5607                
+POS_MISC 2347                
+POS_ERRORS 5666                
+POS_CLUSTER 3337                
+POS_SIDER_404 5751                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20170802104235 1 0 11446296764991
+FirstTime 20170704132004
+LastTime 20170731203024
+LastUpdate 20170802151609 1 0 0 0 0
+TotalVisits 22                  
+TotalUnique 9                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 9                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+AddToFavourites 0 1 0
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 0 0 0 0 0 0
+10 18 74 1221419 0 3 0
+11 9 37 58374 0 1 0
+12 9 36 58374 0 1 0
+13 5 43 4208763 4 5 15086
+14 19 74 7228961 3 5 0
+15 27 108 224109 2 9 0
+16 16 71 5894787 0 2 0
+17 2 4 116748 0 0 0
+18 3 6 175122 8 35 3710641
+19 0 0 0 0 0 0
+20 2 4 116748 0 0 0
+21 0 0 0 0 0 0
+22 0 0 0 0 0 0
+23 0 0 0 0 0 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 2
+za 96 428 18460547
+us 14 29 842858
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 1
+google[_+\s]web[_+\s]preview 34 3710641 20170705181128 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 11
+pdf 3 3238425 0 0
+html 31 720807 0 0
+svg 1 12353 0 0
+woff2 44 198192 0 0
+woff 22 300612 0 0
+ttf 12 408864 0 0
+php 1 2 0 0
+png 31 1365736 0 0
+jpg 182 12316121 0 0
+css 72 282557 0 0
+js 58 459736 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/CV.pdf 3 0 3238425
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 3
+macosx 393 88
+linux 29 14
+ios_iphone 35 8
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 3
+chrome49.0.2623.75 29 14
+safari 35 8
+chrome59.0.3071.115 393 88
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 31 46
+From1 0 0
+From2 0 0
+From3 0 0
+From4 79 411
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+404 24 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 6
+/css/base.css.map 1 -
+/resources/css/compass/CSS3 4 http://lpshahim.co.za/
+/www.facebook.com/lp.shahim 2 http://lpshahim.co.za/
+/css/vendor.css.map 1 -
+/images/logo.png 15 http://lpshahim.co.za/css/main.css
+/css/main.css.map 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 9
+143.160.105.71 72 323 13645235 20170706103144
+41.177.140.210 8 35 0 20170714114504
+41.13.64.49 8 35 4790116 20170705161751
+143.160.107.241 8 35 25196 20170726102614
+66.249.93.64 6 7 224690 20170730181104
+66.249.93.28 3 6 175122 20170725133932
+66.249.93.94 2 5 141944 20170731203024
+66.249.93.67 2 8 217532 20170726101141
+66.249.93.27 1 3 83570 20170717125615
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 14
+20170704 57 256 12624560 4
+20170705 17 71 4848490 3
+20170706 9 37 1137849 2
+20170713 1 2 58374 1
+20170714 9 37 58374 2
+20170717 1 2 58374 1
+20170718 1 2 58374 1
+20170719 1 2 58374 1
+20170725 1 2 58374 1
+20170726 9 38 108766 2
+20170728 1 2 58374 1
+20170729 1 2 58374 1
+20170730 1 2 58374 1
+20170731 1 2 58374 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 3
+0s-30s 20
+30mn-1h 1
+2mn-5mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 10
+/ 31 720807 22 15
+/fonts/poppins/poppins-bold-webfont.woff2 11 49176 0 0
+/fonts/lora/lora-regular-webfont.woff 11 104256 0 0
+/fonts/poppins/poppins-regular-webfont.woff2 11 49836 0 0
+/css/font-awesome/fonts/fontawesome-webfont.woff 11 196356 0 0
+/fonts/poppins/poppins-semibold-webfont.woff2 11 49692 0 0
+/fonts/poppins/poppins-medium-webfont.woff2 11 49488 0 1
+/css/micons/fonts/icomoon.ttf 11 220356 0 6
+/inc/sendEmail.php 1 2 0 0
+/vendors/fonts/ionicons.ttf 1 188508 0 0
+END_SIDER

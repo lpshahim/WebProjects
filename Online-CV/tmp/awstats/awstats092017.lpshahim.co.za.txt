@@ -1,0 +1,289 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201709 will be lost/reset.
+# Last config file used to build this data file was /home/dhpbgnez/tmp/awstats/awstats.lpshahim.co.za.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2011                
+POS_TIME 2685                
+POS_VISITOR 6387                
+POS_DAY 7081                
+POS_DOMAIN 3257                
+POS_LOGIN 3505                
+POS_ROBOT 3660                
+POS_WORMS 3792                
+POS_EMAILSENDER 3923                
+POS_EMAILRECEIVER 4066                
+POS_SESSION 7313                
+POS_SIDER 7509                
+POS_FILETYPES 4201                
+POS_DOWNLOADS 4450                
+POS_OS 4530                
+POS_BROWSER 4668                
+POS_SCREENSIZE 4889                
+POS_UNKNOWNREFERER 4963                
+POS_UNKNOWNREFERERBROWSER 5050                
+POS_ORIGIN 5132                
+POS_SEREFERRALS 5269                
+POS_PAGEREFS 5413                
+POS_SEARCHWORDS 5601                
+POS_KEYWORDS 5753                
+POS_MISC 2349                
+POS_ERRORS 5812                
+POS_CLUSTER 3361                
+POS_SIDER_404 5909                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20170930213630 2 199 12177370591616
+FirstTime 20170903213100
+LastTime 20170930213629
+LastUpdate 20171001155142 2 0 2 0 0
+TotalVisits 22                  
+TotalUnique 14                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 15                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+PDFSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+TotalMisc 0 0 0
+QuickTimeSupport 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 11 30 2309082 0 4 0
+9 8 35 3735837 0 2 0
+10 11 21 619017 0 11 0
+11 18 54 4202555 0 11 0
+12 11 26 2160960 0 2 0
+13 48 109 6270413 21 54 1281
+14 27 65 1469620 0 27 0
+15 0 0 0 0 0 0
+16 21 47 1143146 0 17 0
+17 0 0 0 0 0 0
+18 19 48 4265966 0 3 0
+19 1 3 0 0 1 0
+20 0 0 0 0 0 0
+21 9 36 3769289 0 1 0
+22 19 47 4240770 0 3 0
+23 0 0 0 0 0 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 2
+za 180 465 29686097
+us 23 56 4500558
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+php 2 4 0 0
+pdf 5 539601 0 0
+jpg 72 21263476 0 0
+woff 34 1450324 0 0
+css 77 1330372 0 0
+ttf 12 881424 0 0
+html 107 2612482 0 0
+woff2 48 776376 0 0
+png 85 2840834 0 0
+js 79 2491762 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/LP_Final_Resume.pdf 5 0 539601
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+macosx 273 116
+linuxandroid 49 19
+win7 60 18
+ios_iphone 131 46
+linux 8 4
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 8
+chrome49.0.2623.75 8 4
+chrome61.0.3163.100 74 28
+chrome60.0.3112.113 271 115
+chrome60.0.3112.107 24 9
+chrome59.0.3033.0 13 1
+safari 58 17
+safari10.0 50 20
+safari11.0 23 9
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 106 110
+From1 0 0
+From2 0 0
+From3 1 1
+From4 96 410
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+http://hotspots.wasp-sa.co.za/login 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+206 2 1281
+404 130 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 5
+/css/vendor.css.map 7 -
+/css/grabbing.png 5 http://lpshahim.co.za/css/vendor.css
+/css/base.css.map 7 -
+/css/main.css.map 7 -
+/images/logo.png 104 http://lpshahim.co.za/
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 15
+41.160.57.55 106 256 14025166 20170930124642
+196.252.253.147 19 37 1027085 20170926111600
+41.13.20.113 18 47 2808077 20170926224153
+143.160.125.18 18 60 5864694 20170927082433
+199.172.210.191 10 24 2137111 20170926224917
+41.177.140.25 9 23 2103659 20170926180725
+143.160.106.158 8 35 3735837 20170926095655
+66.249.93.47 4 8 230928 20170928130319
+66.249.93.49 3 10 487494 20170928130319
+66.249.93.64 2 4 117296 20170930213629 20170930213629 /
+66.249.93.67 2 3 92100 20170928112408
+66.249.93.45 2 6 1410433 20170928130319
+196.252.253.36 1 4 121579 20170927084646
+41.177.140.131 1 3 0 20170926195459
+66.249.93.94 0 1 25196 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 7
+20170903 8 34 3710641 1
+20170918 9 36 3735839 1
+20170926 145 345 17918976 9
+20170927 11 30 2309082 3
+20170928 10 26 2187503 4
+20170929 10 25 2162307 2
+20170930 10 25 2162307 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+15mn-30mn 1
+30mn-1h 1
+1h+ 1
+30s-2mn 1
+0s-30s 16
+5mn-15mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 10
+/ 107 2612482 20 9
+/fonts/poppins/poppins-bold-webfont.woff2 12 180312 1 0
+/css/font-awesome/fonts/fontawesome-webfont.woff 12 719972 0 0
+/css/micons/fonts/icomoon.ttf 12 881424 0 6
+/fonts/lora/lora-regular-webfont.woff 12 382272 0 1
+/fonts/poppins/poppins-medium-webfont.woff2 12 197952 0 0
+/fonts/poppins/poppins-semibold-webfont.woff2 12 198768 0 1
+/fonts/poppins/poppins-regular-webfont.woff2 12 199344 1 0
+/fonts/lora/lora-bold-webfont.woff 10 348080 0 3
+/inc/sendEmail.php 2 4 0 1
+END_SIDER
